@@ -40,7 +40,7 @@
         
             "xAxisLabel":[],
         
-            "yAxisLabel": "Number of live births, England & Wales",
+            "yAxisLabel": "Number of live births, Northern Ireland",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
