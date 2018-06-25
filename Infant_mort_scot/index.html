@@ -303,20 +303,37 @@
 		// gridlines
 			//var x_axis_grid = function() { console.log(xAxis); return xAxis; }
 			//var x_axis_grid = svg.append("g").append("line").attr("id","gridline");
-			data.forEach(function(d,i) { if(i%5 == 2 || i == 0 || i == data.length-1 ){
-				svg.append("line")
-					.attr("class", "gridDash")
-					.attr("id", function(){ return "gridline"+i} )
-			 			.style("stroke", "#ccc")
-						.attr('y1',y(y.domain()[0]) )
-						.attr('y2',y(y.domain()[1]) )
-						.attr('x1', function() { // console.log(d.year);
-										return x(d.year );
-						})
-						.attr('x2',function() {
-										return x(d.year);
-						});
-					} // ends if
+			data.forEach(function(d,i) { if (i<5) {
+        // if(i%5 == 2 || i == 0 || i == data.length-1 ){
+  				svg.append("line")
+  					.attr("class", "gridDash")
+  					.attr("id", function(){ return "gridline"+i} )
+  			 			.style("stroke", "#ccc")
+  						.attr('y1',y(y.domain()[0]) )
+  						.attr('y2',y(y.domain()[1]) )
+  						.attr('x1', function() { // console.log(d.year);
+  										return x(d.year );
+  						})
+  						.attr('x2',function() {
+  										return x(d.year);
+  						});
+  					// } // ends if
+      } else {
+        if(i%5 == 4 || i == 0 || i == data.length-1 ){
+  				svg.append("line")
+  					.attr("class", "gridDash")
+  					.attr("id", function(){ return "gridline"+i} )
+  			 			.style("stroke", "#ccc")
+  						.attr('y1',y(y.domain()[0]) )
+  						.attr('y2',y(y.domain()[1]) )
+  						.attr('x1', function() { // console.log(d.year);
+  										return x(d.year );
+  						})
+  						.attr('x2',function() {
+  										return x(d.year);
+  						});
+  					} // ends if
+      }
 				});
 				// Delete first gridline to leave yaxis
 				//d3.select("#gridline0").remove();
