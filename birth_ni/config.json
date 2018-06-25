@@ -40,7 +40,7 @@
         
             "xAxisLabel":[],
         
-            "yAxisLabel": "Number of live births, England & Wales",
+            "yAxisLabel": "Number of live births, Northern Ireland",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
@@ -52,7 +52,7 @@
                           " is too low - in 2015 the number of live births was 24,215.", 
                           "Didn't fancy a guess then. Try the next one."],
 			
-			"appendText": ["The population is living longer."]
+			"appendText": ["In 1948, there were 29,532 babies born in Northern Ireland; 1,072 outside marriage. By 2015, the figure had dropped by 18% to  24,215. By 2015 the number of babies born outside marriage had increased tenfold, to 10, 570."]
 								
     },
     "optional" : {
@@ -72,5 +72,3 @@
             "centre_line_value" :0    
     }
 }
-
-

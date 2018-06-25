@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<title>Births Scot</title>
+<title>Births Scotland</title>
 
 	<style type="text/css">
 		#fallback{
@@ -303,7 +303,7 @@
 		// gridlines
 			//var x_axis_grid = function() { console.log(xAxis); return xAxis; }
 			//var x_axis_grid = svg.append("g").append("line").attr("id","gridline");
-			data.forEach(function(d,i) { if(i%5 == 2 || i == 0 || i == data.length-1 ){
+			data.forEach(function(d,i) { if(i%5 == 0 || i == 0 || i == data.length-1 ){
 				svg.append("line")
 					.attr("class", "gridDash")
 					.attr("id", function(){ return "gridline"+i} )
@@ -392,7 +392,7 @@
 		var text = d3.select("#currYVal");
 		var bbox = text.node().getBBox();
 		var padding = 2;
-console.log(bbox.x, bbox.width, bbox.height);
+//console.log(bbox.x, bbox.width, bbox.height);
 				svg.select("g #currYValG").insert("rect","#currYVal")
 					.attr("id","backgroundrect")
 					.attr("x", bbox.x*2.5 - padding)
@@ -573,6 +573,7 @@ console.log(bbox.x, bbox.width, bbox.height);
       }else{
        	pymChild.sendMessage('tracking', 'button-clicked-before-interaction');
 		  d3.select("#textResponse").select("p").text(dvc.essential.feedback[5]);
+		  d3.select("#textResponse").append("p").html(dvc.essential.appendText);
 
       }
 
@@ -600,7 +601,7 @@ console.log(bbox.x, bbox.width, bbox.height);
 
 				var drawMark = svg.append("g").attr("id", "drawMark");
 
-					data.forEach(function(d) { console.log(formatMyTime(d.year), formatMyTime(cutOff));
+					data.forEach(function(d) {// console.log(formatMyTime(d.year), formatMyTime(cutOff));
 												if(formatMyTime(d.year) === formatMyTime(cutOff))  myY = d.debt;
 											});
 
@@ -775,7 +776,7 @@ console.log(bbox.x, bbox.width, bbox.height);
 
 						dvc_data = data.filter(function(d){
 										return d.year >= parseMyTime(dvc.essential.dateStart); })
-							console.log(dvc_data08);
+							//console.log(dvc_data08);
 												pymChild = new pym.Child({renderCallback: drawGraphic(dvc_data)});
 								})
 

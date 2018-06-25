@@ -401,7 +401,7 @@
 		var text = d3.select("#currYVal");
 		var bbox = text.node().getBBox();
 		var padding = 2;
-console.log(bbox.x, bbox.width, bbox.height);
+//console.log(bbox.x, bbox.width, bbox.height);
 				svg.select("g #currYValG").insert("rect","#currYVal")
 					.attr("id","backgroundrect")
 					.attr("x", bbox.x*2.5 - padding)
@@ -582,6 +582,7 @@ console.log(bbox.x, bbox.width, bbox.height);
       }else{
        	pymChild.sendMessage('tracking', 'button-clicked-before-interaction');
 		  d3.select("#textResponse").select("p").text(dvc.essential.feedback[5]);
+		  d3.select("#textResponse").append("p").html(dvc.essential.appendText);
 
       }
 				
@@ -752,6 +753,7 @@ console.log(bbox.x, bbox.width, bbox.height);
 				{
 					// strore read in json data from config file as as global dvc. variable ...
 					dvc = json;
+					//console.log(dvc);
 						readData();
 				})
 
