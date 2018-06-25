@@ -128,7 +128,7 @@
  			<button type="button" id="showMe" class="btn" >Show me the answer</button>
    </div>
 
-	<div id="textResponse" style="text-align:center;"><p></p></div>
+	<div id="textResponse" style="text-align:left;"><p></p></div>
 
  <script src="../js/d3v4.js"></script>
 
@@ -141,8 +141,8 @@
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-37894017-1']);
 		  _gaq.push(['_trackPageview']);
-		
-		
+
+
 		  (function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -150,7 +150,7 @@
 		  })();
 
 	</script>
-    
+
 <script>
 
 
@@ -437,8 +437,8 @@
 
 	function dragNet(){
 
-		yourData = data.map(function(d){ 
-									return {	
+		yourData = data.map(function(d){
+									return {
 												year: d.year,
 												debt: d.debt,
 												defined: 0
@@ -474,12 +474,12 @@
 
 					d3.select("#currYVal").text(fomat(debt));
 			//console.log(pos[0], pos[0] - margin.right, x(parseMyTime(dvc.essential.annotationXY[0])) );
-			
-			
+
+
 			 if (pos[0] > x(parseMyTime(dvc.essential.dateBegin)) ) {
               d3.select("#annotext").remove();
             }							// adjust this figure to flip back keep going
-           else if (pos[0] - margin.right / 2 > 440) 
+           else if (pos[0] - margin.right / 2 > 440)
 		  {   //console.log("behind");
               d3.select("#annotext").attr("display", "auto")
     								.style("pointer-events", "none")
@@ -489,7 +489,7 @@
 									.attr('transform', "translate(" + (pos[0] - margin.right*2 - x(parseMyTime(dvc.essential.annotationXY[0]))) + ", " + (pos[1] - margin.top / 2 - y(dvc.essential.annotationXY[1])) +
                   ") ")
                 					.text("Keep going");
-            } 
+            }
 			else /*if (pos[0] > 0) */
 			{ //console.log("ahead");
               d3.select("#annotext").attr("display", "auto")
@@ -560,7 +560,7 @@
       if (yourData[yourData.length-1].defined === true ){  //  or  d3.mean(yourData, format('defined')) < 0.5 ie less than 50% achieved
         //d3.select("#textResponse").select("p").text(dvc.essential.feedback[0] + formt(myResult) + "%.");
           pymChild.sendMessage('tracking', 'button-clicked-after-interaction');
-		  
+
 		  if(myResult <= 33.4){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[4]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);

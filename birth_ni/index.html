@@ -133,7 +133,7 @@
  			<button type="button" id="showMe" class="btn" >Show me the answer</button>
    </div>
 
-	<div id="textResponse" style="text-align:center;"><p></p></div>
+	<div id="textResponse" style="text-align:left;"><p></p></div>
 
  <script src="../js/d3v4.js"></script>
 
@@ -146,8 +146,8 @@
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-37894017-1']);
 		  _gaq.push(['_trackPageview']);
-		
-		
+
+
 		  (function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -155,7 +155,7 @@
 		  })();
 
 	</script>
-    
+
 <script>
 
 
@@ -338,7 +338,7 @@
 		var line = d3.line()
 					 .x(format('year', x))
 					 .y(format('debt', y));
-					 
+
 		var line2 = d3.line()
 					 .x(format('year', x))
 					 .y(format('divorce', y));
@@ -446,8 +446,8 @@
 
 	function dragNet(){
 
-		yourData = data.map(function(d){ 
-									return {	
+		yourData = data.map(function(d){
+									return {
 												year: d.year,
 												debt: d.debt,
 												defined: 0
@@ -483,12 +483,12 @@
 
 					d3.select("#currYVal").text(fomat(debt));
 			//console.log(pos[0], pos[0] - margin.right, x(parseMyTime(dvc.essential.annotationXY[0])) );
-			
-			
+
+
 			 if (pos[0] > x(parseMyTime(dvc.essential.dateBegin)) ) {
               d3.select("#annotext").remove();
             }							// adjust this figure to flip back keep going
-           else if (pos[0] - margin.right / 2 > chart_width*0.8) 
+           else if (pos[0] - margin.right / 2 > chart_width*0.8)
 		  {   //console.log(chart_width, chart_width*0.8,"behind", pos[0] - margin.right / 2);
               d3.select("#annotext").attr("display", "auto")
     								.style("pointer-events", "none")
@@ -498,7 +498,7 @@
 									.attr('transform', "translate(" + (pos[0] - 80 - x(parseMyTime(dvc.essential.annotationXY[0][0]))) + ", " + (pos[1] - margin.top / 2 - y(dvc.essential.annotationXY[0][1])) +
                   ") ")
                 					.text("Keep going");
-            } 
+            }
 			else /*if (pos[0] > 0) */
 			{ //console.log("ahead");
               d3.select("#annotext").attr("display", "auto")
@@ -585,16 +585,16 @@
 		  d3.select("#textResponse").append("p").html(dvc.essential.appendText);
 
       }
-				
+
 				var clipDivorce = svg.append('clipPath#clip2')
 													  .append('rect')
 													  .attr('width', chart_width)//clipWidth) //x(cutOff)  end date - start date = area shown  === formatMyTime(cutOff)
 													  .attr('height', height)
 													  .attr('transform',"translate(" + /*(x(cutOff))*/0 + ", 0)");
-													  
+
 				//hideDivorce.append('path.area2').attr('d', function(){ return area2(data); });
 				var hideDivorce = svg.append('g').attr('clip-path', 'url(#clip2)');
-				
+
 						hideDivorce.append('path.line2').attr('d', function(){return line2(data); });
 
 						clipDivorce.transition().delay(2000).duration(2000).attr('transform',"translate(" + 0 + ", 0)").attr('width', 522);
@@ -718,8 +718,8 @@
 																}
 								})
 								.attr("cursor", "default");
-						
-						//if( parseInt(d3.select('#graphic').style("width")) > threshold_sm){		
+
+						//if( parseInt(d3.select('#graphic').style("width")) > threshold_sm){
 //							svg.append("text")
 //								//.attr("id","annotext"/* + i*/)
 //								.attr("text-anchor", dvc.essential.annotationAlign/*[i]*/)
@@ -736,7 +736,7 @@
 //								})
 								//.attr("cursor", "default");
 						//}
-						
+
 				return;
 
 			}// end function writeAnnotation()

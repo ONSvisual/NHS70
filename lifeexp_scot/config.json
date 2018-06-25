@@ -51,7 +51,7 @@
                           " is too low - in 1952, male life expectancy was 64.4.", 
                           "Didn't fancy a guess then. Try the next one."],
 			
-			"appendText": ["Life expectancy has steadily risen in line with improvements in health care. Women have always had longer life expectancies than men, although the gap has narrowed in recent years."]
+			"appendText": ["Life expectancy has steadily risen in line with improvements in healthcare. Women have always had longer life expectancies than men, although the gap has narrowed in recent years. Life expectancy in Scotland is two years behind England and Wales both for men and women."]
 								
     },
     "optional" : {
