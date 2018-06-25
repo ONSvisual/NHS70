@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBCBVQS');</script>
+<!-- End Google Tag Manager -->
+
  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
     <meta name="description" content="">
@@ -126,6 +134,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBCBVQS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 <div id="graphic" style="text-align:center;"> <img id="fallback" src="fallback.png" alt="[Chart]" />
 </div>
@@ -534,7 +546,20 @@
 
 
 	function showMe(){
-			var fmat = d3.format(".0f");
+    data_user_line = [];
+    var formatDate = d3.timeFormat("%d-%b-%Y")
+    formatVal = d3.format(".3r");
+
+    toDraw.forEach(function(d, i){
+      data_user_line.push(formatDate(d.year)+": "+formatVal(d.debt));
+    })
+
+    dataLayer.push({
+      'event': 'collectedData',
+      'selected': data_user_line
+    })
+
+      var fmat = d3.format(".0f");
 
 			d3.select('#graphic').style("pointer-events", "none");
 
@@ -564,7 +589,11 @@
 
       if (yourData[0].defined === true ){  //  or  d3.mean(yourData, format('defined')) < 0.5 ie less than 50% achieved
         //d3.select("#textResponse").select("p").text(dvc.essential.feedback[0] + formt(myResult) + "%.");
-          pymChild.sendMessage('tracking', 'button-clicked-after-interaction');
+          //pymChild.sendMessage('tracking', 'button-clicked-after-interaction');
+          dataLayer.push({
+          	'event': 'buttonClicked',
+          	'selected': 'button clicked after interaction'
+          })
 		   if(myResult <= 61.4){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[4]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
@@ -576,7 +605,11 @@
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
                   }
       }else{
-		pymChild.sendMessage('tracking', 'button-clicked-before-interaction');
+		//pymChild.sendMessage('tracking', 'button-clicked-before-interaction');
+    dataLayer.push({
+      'event': 'buttonClicked',
+      'selected': 'button clicked before interaction'
+    })
 		  d3.select("#textResponse").select("p").text(dvc.essential.feedback[5]);
 		  d3.select("#textResponse").append("p").html(dvc.essential.appendText);
       }
