@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<title>Life expectancy draw your own</title>
+<title>Life expectancy Scotland</title>
 
 	<style type="text/css">
 		#fallback{
@@ -577,6 +577,7 @@
                   }
       }else{
 		pymChild.sendMessage('tracking', 'button-clicked-before-interaction');
+		  d3.select("#textResponse").select("p").text(dvc.essential.feedback[5]);
 		  d3.select("#textResponse").append("p").html(dvc.essential.appendText);
       }
 

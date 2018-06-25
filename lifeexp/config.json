@@ -45,9 +45,13 @@
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
         
-             "feedback": ["Excellent! Your guess of ", " is not far off male life expectancy in 1948, which was 65.9.", "Your guess of ", " is too high - the real male life expectancy in 1948 was 65.9.", " is too low - in 1948, male life expectancy was 65.9.", " is too low - in 1948, male life expectancy was 65.9.", "Oh dear", "Didn't fancy a guess then. Try the next one."],
+             "feedback": ["Excellent! Your guess of ",
+                          " is not far off male life expectancy in 1948, which was 65.9.", 
+                          "Your guess of ", " is too high - the real male life expectancy in 1948 was 65.9.", 
+                          " is too low - in 1948, male life expectancy was 65.9.", 
+                          "Didn't fancy a guess then. Try the next one."],
 			
-			"appendText": ["Both Male and Female Life expectancy have in recent years  started to level out and the gap between their life expectancy has slightly narrowed since the 70s."]
+			"appendText": ["Life expectancy has steadily risen in line with improvements in health care. Women have always had longer life expectancies than men, although the gap has narrowed in recent years."]
 								
     },
     "optional" : {
