@@ -7,11 +7,11 @@
 
             "dateFormat": ["%Y"],
 
-            "dateMxMn": ["1971"],
+            "dateMxMn": ["1950"],
 
-            "dateStart": ["1971"],
+            "dateStart": ["1950"],
 
-            "dateCutOff": ["1980"],
+            "dateCutOff": ["1965"],
 
             "dateBegin": ["2016"],
 
@@ -19,7 +19,7 @@
 
             "clampEnd": ["2017"],
 
-            "domMax": 2000,
+            "domMax": 5000,
             "domMin": 0,
 
             "legendLabels" : [ ],
