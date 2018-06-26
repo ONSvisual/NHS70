@@ -356,7 +356,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									yourDataSel = svg.append('path.your-line');
 
 		//create centre line if required
-			if (dvc.optional.centre_line == true){ console.log("centreline");
+			if (dvc.optional.centre_line == true){
 				svg.append("line")
 					.attr("id","centreline")
 					.attr('y1',y(dvc.optional.centre_line_value))
@@ -569,7 +569,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			var myResult = yourData[yourData.length-1].debt,
 				result = data[data.length-1].debt;
 				diff = (Math.abs(myResult - result));
-			console.log(result, myResult, diff, yourData[yourData.length-1].debt, yourData[0].defined);
 
       if (yourData[yourData.length-1].defined === true ){  //  or  d3.mean(yourData, format('defined')) < 0.5 ie less than 50% achieved
         //d3.select("#textResponse").select("p").text(dvc.essential.feedback[0] + formt(myResult) + "%.");
