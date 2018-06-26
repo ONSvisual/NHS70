@@ -47,10 +47,10 @@
 
              "feedback": [
                  "Excellent! Your guess of ",
-                 " is not far off the rate of 65s and over in 2016, which was 18.1.",
+                 "% is not far off the rate of 65s and over in 2016.",
                  "Your guess of ",
-                 " is too high - the rate of 65s and over in 2016 was 18.1.",
-                 " is too low - in 2016 the rate of 65s and over was 18.1.",
+                 "% is too high.",
+                 " is too low.",
                  "Oh dear",
                  "Didn't fancy a guess then. Try the next one."],
 

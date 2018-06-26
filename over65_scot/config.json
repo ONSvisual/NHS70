@@ -47,14 +47,14 @@
         
              "feedback": [
                  "Excellent! Your guess of ", 
-                 " is not far off the rate of 65s and over in 2017, which was 38.4.", 
+                 "% is not far off the rate of 65s and over in 2017.", 
                  "Your guess of ", 
-                 " is too high - the rate of 65s and over in 2017 was 38.4.", 
-                 " is too low - in 2017 the rate of 65s and over was 38.4.", 
+                 " is too high.", 
+                 " is too low.", 
                  "Oh dear", 
                  "Didn't fancy a guess then. Try the next one."],
 			
-			"appendText": ["In 1948, 11% of the population of Great Britain was aged 65 and older. By 2016, this had risen to 18%. That’s an increase from around five million to just over 11.5 million people."]
+			"appendText": ["In 1948, 20% of the population of Scotland was aged 65 and older. By 2017, this had risen to 38%. That’s an increase from around 498,000 to just over a million people."]
 								
     },
     "optional" : {
