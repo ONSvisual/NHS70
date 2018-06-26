@@ -1,8 +1,8 @@
  # NHS templates
 
 
-- [Infant mortality England and Wales ](https://onsvisual.github.io/NHS70/Infant_mort_ew/index.html)
-- [Infant mortality Scotland ](https://onsvisual.github.io/NHS70/Infant_mort_scot/index.html)
+- [Infant mortality England and Wales ](https://onsvisual.github.io/NHS70/infant_mort_ew/index.html)
+- [Infant mortality Scotland ](https://onsvisual.github.io/NHS70/infant_mort_scot/index.html)
 - [Births England and Wales ](https://onsvisual.github.io/NHS70/birth_ew/index.html)
 - [Births Northern Ireland ](https://onsvisual.github.io/NHS70/birth_ni/index.html)
 - [Births Scotland ](https://onsvisual.github.io/NHS70/birth_scot/index.html)
