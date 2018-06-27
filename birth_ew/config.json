@@ -11,7 +11,7 @@
 
             "dateStart": ["1948"],
 
-            "dateCutOff": ["1967"],
+            "dateCutOff": ["1961"],
 
             "dateBegin": ["2016"],
 
@@ -31,7 +31,7 @@
 
             "annotationBullet": [ ],
 
-            "annotationXY":[["1968", 720000], ["1967", 890000]],
+            "annotationXY":[["1962", 720000], ["1959", 890000]],
 
             "annotationAlign":["start"],
 
