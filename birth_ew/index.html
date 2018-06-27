@@ -512,14 +512,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 						toDraw = [];
 						 yourData.forEach(function(d){
-													if (d.defined==true){ //console.log(d);
+													if (d.defined==true){ // console.log(d);
 														toDraw.push(d);
 													}
 												})
 
 
 
-					yourDataSel.attr("d", function() { // console.log(toDraw);
+					yourDataSel.attr("d", function() { //console.log(toDraw);
 														return line(toDraw); // was yourData
 													}); // this shows it all
 
