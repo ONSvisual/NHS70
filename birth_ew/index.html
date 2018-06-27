@@ -721,14 +721,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								.attr('y',y(dvc.essential.annotationXY/*[i]*/[1][1]))
 								.attr('x',x(parseMyTime(dvc.essential.annotationXY/*[i]*/[1][0])) )
 								.style("font-weight", 600)
-								.text(dvc.essential.annotationChart/*[i]*/[2])
-//								.text(function(){ if( parseInt(d3.select('#graphic').style("width")) < threshold_sm){
-//
-//																return dvc.essential.annotationChart/*[i]*/[3];
-//																} else
-//																{ return dvc.essential.annotationChart/*[i]*/[2];
-//																}
-//								})
+								// .text(dvc.essential.annotationChart/*[i]*/[2])
+								.text(function(){ if( parseInt(d3.select('#graphic').style("width")) < threshold_sm){
+
+																return dvc.essential.annotationChart/*[i]*/[3];
+																} else
+																{ return dvc.essential.annotationChart/*[i]*/[2];
+																}
+								})
 								.attr("cursor", "default");
 						//}
 

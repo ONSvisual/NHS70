@@ -27,7 +27,7 @@
             "sourceText":["Office for National Statistics"],
             "sourceURL":["http://www.ons.gov.uk/"],
 
-            "annotationChart": ["Hold and Drag", "Drag", "Contraceptive pill introduced", "Contraceptive pill introduced"],
+            "annotationChart": ["Hold and Drag", "Drag", "Contraceptive pill introduced", ""],
 
             "annotationBullet": [ ],
 
