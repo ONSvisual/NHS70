@@ -557,8 +557,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	function showMe(){
     data_user_line = [];
     var formatDate = d3.timeFormat("%d-%b-%Y")
-    // empty array to show anser when clicked without drawing
-    toDraw=[];
 
     toDraw.forEach(function(d, i){
       data_user_line.push(formatDate(d.year)+": "+parseInt(d.debt));
@@ -568,6 +566,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'event': 'collectedData',
       'selected': data_user_line
     })
+    
+    // empty array to show anser when clicked without drawing
+    toDraw=[];
 
 			var fmat = d3.format(",.0f");
 
