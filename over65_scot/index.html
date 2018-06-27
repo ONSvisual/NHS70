@@ -579,13 +579,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'event': 'buttonClicked',
             'selected': 'button clicked after interaction'
           })
-		  if(myResult <= 33.4){
+		  if(myResult <= 13.7){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[4]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
-                  }else if(myResult < 43.4 && myResult > 33.4){
+                  }else if(myResult < 23.7 && myResult > 13.7){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[0] + fmat(myResult) + dvc.essential.feedback[1]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
-                  }else if(myResult >= 43.4){
+                  }else if(myResult >= 23.7){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[3]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
                   }
