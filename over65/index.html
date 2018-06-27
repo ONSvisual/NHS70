@@ -538,19 +538,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 	function showMe(){
-    data_user_line = [];
-    var formatDate = d3.timeFormat("%d-%b-%Y")
-    formatVal = d3.format(".3r");
+    if (typeof toDraw != "undefined") {
+                data_user_line = [];
+                var formatDate = d3.timeFormat("%d-%b-%Y")
 
-    toDraw.forEach(function(d, i){
-      data_user_line.push(formatDate(d.year)+": "+formatVal(d.debt));
-    })
+                toDraw.forEach(function(d, i){
+                  data_user_line.push(formatDate(d.year)+": "+parseInt(d.debt));
+                })
 
-    dataLayer.push({
-      'event': 'collectedData',
-      'selected': data_user_line
-    })
-    
+                dataLayer.push({
+                  'event': 'collectedData',
+                  'selected': data_user_line.toString()
+                })
+    }
+
     // empty array to show anser when clicked without drawing
     toDraw=[];
 

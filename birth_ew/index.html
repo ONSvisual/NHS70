@@ -519,7 +519,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-					yourDataSel.attr("d", function() {  console.log(toDraw);
+					yourDataSel.attr("d", function() { // console.log(toDraw);
 														return line(toDraw); // was yourData
 													}); // this shows it all
 
@@ -531,29 +531,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //							console.log("completed");
 //						} //ends if completed
 
+
 		}) // ends on drag
 
 		svg.call(drag);
+
+
 
 	} // ends dragNet
 
 
 	function showMe(){
+      if (typeof toDraw != "undefined") {
+                  data_user_line = [];
+                  var formatDate = d3.timeFormat("%d-%b-%Y")
 
-    data_user_line = [];
-    var formatDate = d3.timeFormat("%d-%b-%Y")
+                  toDraw.forEach(function(d, i){
+                    data_user_line.push(formatDate(d.year)+": "+parseInt(d.debt));
+                  })
 
-    toDraw.forEach(function(d, i){
-        data_user_line.push(formatDate(d.year)+": "+parseInt(d.debt));
-    })
+                  dataLayer.push({
+                    'event': 'collectedData',
+                    'selected': data_user_line.toString()
+                  })
+      }
 
-    dataLayer.push({
-      'event': 'collectedData',
-      'selected': data_user_line
-    })
-
-    // empty array to show anser when clicked without drawing
-    toDraw=[];
+      // empty array to show anser when clicked without drawing
+      toDraw=[];
 
 			var fmat = d3.format(",.0f");
 
