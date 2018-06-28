@@ -40,7 +40,7 @@
 
             "xAxisLabel":[],
 
-            "yAxisLabel": "Percentage of population over 65, Great Britain",
+            "yAxisLabel": "Percentage of population aged 65 and over, Great Britain",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
