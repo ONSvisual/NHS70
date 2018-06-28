@@ -581,10 +581,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		  if(myResult <= 700){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[4]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
-                  }else if(myResult < 4700 && myResult > 700){
+                  }else if(myResult < 3500 && myResult > 700){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[0] + fmat(myResult) + dvc.essential.feedback[1]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
-                  }else if(myResult >= 4700){
+                  }else if(myResult >= 3500){
                     d3.select("#textResponse").append("p").text(dvc.essential.feedback[2] + fmat(myResult) + dvc.essential.feedback[3]);
                     d3.select("#textResponse").append("p").html(dvc.essential.appendText);
                   }
