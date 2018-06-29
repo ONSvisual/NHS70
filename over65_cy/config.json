@@ -46,12 +46,12 @@
             "yAxisBreak_sm_md_lg": [65,65,65],
 
              "feedback": [
-                 "Excellent! Your guess of ",
-                 "% idydy hynny ddim yn bell ohoni ar y ganran y bobl 65 oed a hŷn yn 2016.",
+                 "Ardderchog! Rydych wedi dyfalu ",
+                 "% Dydy hynny ddim yn bell ohoni ar gyfer cyfradd y bobl 65 oed a hŷn yn 2016.",
                  "Rydych wedi dyfalu ",
                  "% mae hynny’n rhy uchel.",
                  " mae hynny’n rhy isel.",
-                 "Oh dear",
+                 "",
                  "Ddim awydd rhoi cynnig arni felly. Rhowch gynnig ar y nesaf."],
 
 			"appendText": ["Ym 1948, roedd 11% o boblogaeth Prydain Fawr yn 65 oed neu'n hŷn. Erbyn 2016, roedd hyn wedi cynyddu i 18%. Mae hynny'n gynnydd o tua phum miliwn i ychydig dros 11.5 miliwn o bobl."]
