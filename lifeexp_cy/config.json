@@ -40,16 +40,16 @@
 
             "xAxisLabel":[],
 
-            "yAxisLabel": "Male life expectancy age, England & Wales",
+            "yAxisLabel": "Disgwyliad oes dynion, Cymru a Lloegr",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
 
-             "feedback": ["Excellent! Your guess of ",
-                          " is not far off male life expectancy in 1948, which was 65.9.",
-                          "Your guess of ", " is too high - the real male life expectancy in 1948 was 65.9.",
-                          " is too low - in 1948, male life expectancy was 65.9.",
-                          "Didn't fancy a guess then. Try the next one."],
+             "feedback": ["Ardderchog! Rydych wedi dyfalu  ",
+                          " dydy hynny ddim yn bell ohoni. Ym 1948 y disgwyliad oes i ddynion oedd 65.9 oed.",
+                          "Rydych wedi dyfalu ", " mae hynny’n rhy uchel. Ym 1948 y disgwyliad oes gwirioneddol i ddynion oedd 65.9 oed.",
+                          " mae hynny’n rhy isel. Ym 1948 y disgwyliad oes i ddynion oedd 65.9 oed.",
+                          "Ddim awydd rhoi cynnig arni felly. Rhowch gynnig ar y nesaf."],
 
 			"appendText": ["Mae disgwyliad oes wedi cynyddu'n raddol yn unol â gwelliannau mewn gofal iechyd. Mae disgwyliad oes menywod bob amser wedi bod yn uwch na dynion, er bod y bwlch wedi lleihau dros y blynyddoedd diwethaf."]
 

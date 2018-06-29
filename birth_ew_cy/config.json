@@ -27,7 +27,7 @@
             "sourceText":["Office for National Statistics"],
             "sourceURL":["http://www.ons.gov.uk/"],
 
-            "annotationChart": ["Llusgwch", "Llusgwch", "Contraceptive pill introduced", ""],
+            "annotationChart": ["Llusgwch", "Llusgwch", "Cyflwynwyd y bilsen atal cenhedlu", ""],
 
             "annotationBullet": [ ],
 
@@ -40,17 +40,17 @@
 
             "xAxisLabel":[],
 
-            "yAxisLabel": "Number of live births, England & Wales",
+            "yAxisLabel": "Nifer y genedigaethau byw, Cymru a Lloegr",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
 
-             "feedback": ["Excellent! Your guess of ",
+             "feedback": ["Ardderchog! Rydych wedi dyfalu ",
                           " is not far off the number of live births in 2016, which was 696,271.",
-                          "Your guess of ",
-                          " is too high - the number of live births in 2016 was 696,271.",
-                          " is too low - in 2016 the number of live births was 696,271.",
-                          "Didn't fancy a guess then. Try the next one."],
+                          "Rydych wedi dyfalu ",
+                          " mae hynny’n rhy uchel  - mae nifer y genedigaethau byw yn 2016 bu 696,271.",
+                          " mae hynny’n rhy isel - mae nifer y genedigaethau byw yn 2016 bu 696,271.",
+                          "Ddim awydd rhoi cynnig arni felly. Rhowch gynnig ar y nesaf."],
 
 			"appendText": ["Gallwn weld cynnydd amlwg yn nifer y babanod a anwyd yn y 1960au, ac yna gostyngiad. Mae’n bosib mai’r rheswm am hyn yw’r ffaith i’r bilsen atal cenhedlu ddod ar gael i fenywod priod drwy dalu am bresgripsiwn ym 1961, a’r Ddeddf Erthylu a ddaeth i rym yn 1967. Ym 1974, daeth dulliau atal cenhedlu ar gael am ddim i bob menyw ar y GIG.</br>Ym 1948, ganwyd 775,306 o fabanod yng Nghymru a Lloegr. Erbyn 2016, roedd y ffigur wedi gostwng 10% i 696,271."]
 
