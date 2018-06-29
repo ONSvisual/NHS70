@@ -27,7 +27,7 @@
             "sourceText":["Office for National Statistics"],
             "sourceURL":["http://www.ons.gov.uk/"],
 
-            "annotationChart": ["Hold and Drag", "Drag"],
+            "annotationChart": ["Llusgwch", "Llusgwch"],
 
             "annotationBullet": [ ],
 
@@ -40,17 +40,17 @@
 
             "xAxisLabel":[],
 
-            "yAxisLabel": "Number of infant deaths, England & Wales",
+            "yAxisLabel": "Nifer marwolaethau babanod, Cymru a Lloegr",
             "yAxisScaleDivisor": 1,
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65],
 
-             "feedback": ["Excellent! Your guess of ",
-                          " is not far off the number for infant mortality in 2016, which was 2,711.",
-                          "Your guess of ",
-                          " is too high - infant mortality in 2016 was 2,711.",
-                          " is too low - in 2016 the number of infant deaths was 2,711.",
-                          "Didn't fancy a guess then. Try the next one."],
+             "feedback": ["Ardderchog! Rydych wedi dyfalu ",
+                          " – dydy hynny ddim yn bell ohoni. Yn 2016, bu farw 2,711 o fabanod.",
+                          "Rydych wedi dyfalu ",
+                          " - mae hynny’n rhyuchel – yn 2016, bu farw 2,711 o fabanod.",
+                          " – mae hynny’n rhy isel. Yn 2016, bu farw 2,711 o fabanod.",
+                          "Ddim awydd rhoi cynnig arni felly. Rhowch gynnig ar y nesaf."],
 
 			"appendText": ["Mae cyfradd marwolaethau babanod wedi gostwng yng Nghymru a Lloegr ers dechrau'r 1900au, ond rhwng 1948 a 2016, mae nifer y marwolaethau wedi gostwng yn sylweddol, o 26,766 ym 1948 i 2,711 yn 2016. Y rheswm yn rhannol dros hyn yw'r rhaglenni brechu yn erbyn heintiau megis y frech goch a pholio."]
 
